@@ -1,0 +1,17 @@
+{
+    "name": "denis/skalar.local",
+    "type": "project",
+    "license": "1.0.0",
+    "authors": [
+        {
+            "name": "Denis Gurov",
+            "email": "thunderstorm.lightning@inbox.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    }
+}

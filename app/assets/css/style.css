@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.skl-section__form {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.skl-section__comment {
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.skl_title {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+.skl_text {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+#skl_file {
+    margin-top: 12px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#skl_button {
+    width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+    .skl_title, .skl_text, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/** Comments sections */
+.skl-comments .skl-comment__box {
+    width: 100%;
+    float: left;
+    height: 100%;
+    background-color: #FAFAFA;
+    padding: 10px 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.skl-comments .add-comment {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.skl-comments .skl-commenter__pic {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.skl-comments .add-comment .skl-commenter__name {
+    width: 100%;
+    padding-left: 75px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.skl-comments .skl-commenter__name .skl-comment__time {
+    font-weight: normal;
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+.skl-comments p.skl-comment__txt {
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 0px 0px 15px;
+}
+
+.skl-comments .skl-commenter__name {
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skl-comments .comment-meta {
+    font-size: 14px;
+    color: #333;
+    padding: 2px 5px 0px;
+    line-height: 20px;
+    float: right;
+}
+
+.skl-topic__title {
+    font-size: 15px;
+}
+
+.fa {
+    padding: 5px;
+}
+
+.skl-comment__like {
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.skl-img__fluid {
+    height: 50px;
+    width: 47px;
+}
+
+/** Responsive CSS */
+@media (max-width: 767px) {
+    .skl-comments .skl-commenter__name {
+        font-size: 13px;
+        top: -5px;
+    }
+
+    .skl-comments .skl-commenter__pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skl-comments .skl-commenter__name {
+        display: block;
+    }
+
+    .skl-comments .skl-commenter__name .skl-comment__time {
+        display: block;
+        margin-left: 0px;
+    }
+}
+
+/** Pagination section */
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+.skl-section__pagination {
+    width: 70%;
+    margin: 8px auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
