@@ -108,7 +108,7 @@ class User
   {
     try {
       $statement = $this->database->connection->prepare(
-        "SELECT COUNT(*) as count FROM `{$this->database->config['DATABASE']}`.`users`");
+        "SELECT COUNT(user_id) as count FROM `{$this->database->config['DATABASE']}`.`users`");
 
       $statement->execute();
 

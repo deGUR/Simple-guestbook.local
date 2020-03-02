@@ -4,6 +4,7 @@
     <list default="true" id="82d4fc45-5a12-4753-8d30-f51a8051e7a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/model/User.php" afterPath="$PROJECT_DIR$/app/database/model/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/main.php" afterPath="$PROJECT_DIR$/app/templates/main.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="141">
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="447">
+              <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -39,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/app/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3672">
-              <caret line="204" column="27" lean-forward="true" selection-start-line="204" selection-start-column="27" selection-end-line="204" selection-end-column="27" />
+              <caret line="204" column="27" lean-forward="false" selection-start-line="204" selection-start-column="27" selection-end-line="204" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -72,21 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="110" column="29" lean-forward="false" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
               <folding>
                 <element signature="e#38#46#0#PHP" expanded="true" />
-                <marker date="1583138068035" expanded="true" signature="763:868" ph="INSERT INTO `${{$this-&gt;database-&gt;config['DATABASE']}}`.`users`... " />
-                <marker date="1583138068035" expanded="true" signature="1712:2226" ph="SELECT `user... users" />
-                <marker date="1583138068035" expanded="true" signature="1712:2232" ph="SELECT `user... users" />
-                <marker date="1583138068035" expanded="true" signature="1712:2247" ph="SELECT `user... users" />
-                <marker date="1583138068035" expanded="true" signature="2736:2766" ph="SELECT COUNT... $" />
-                <marker date="1583138068035" expanded="true" signature="2736:2767" ph="SELECT COUNT... " />
-                <marker date="1583138068035" expanded="true" signature="2736:2804" ph="SELECT COUNT... " />
-                <marker date="1583138068035" expanded="true" signature="2736:2813" ph="SELECT COUNT... users" />
+                <marker date="1583169494713" expanded="true" signature="763:868" ph="INSERT INTO `${{$this-&gt;database-&gt;config['DATABASE']}}`.`users`... " />
+                <marker date="1583169494713" expanded="true" signature="1712:2226" ph="SELECT `user... users" />
+                <marker date="1583169494713" expanded="true" signature="1712:2232" ph="SELECT `user... users" />
+                <marker date="1583169494713" expanded="true" signature="1712:2247" ph="SELECT `user... users" />
+                <marker date="1583169494713" expanded="true" signature="2736:2772" ph="SELECT COUNT... $" />
+                <marker date="1583169494713" expanded="true" signature="2736:2773" ph="SELECT COUNT... " />
+                <marker date="1583169494713" expanded="true" signature="2736:2810" ph="SELECT COUNT... " />
+                <marker date="1583169494713" expanded="true" signature="2736:2819" ph="SELECT COUNT... users" />
               </folding>
             </state>
           </provider>
@@ -95,7 +96,7 @@
       <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/model/Comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
+            <state relative-caret-position="774">
               <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
               <folding>
                 <marker date="1582995488109" expanded="true" signature="656:791" ph="INSERT INTO `${{$this-&gt;database-&gt;config['DATABASE']}}`.`comments`... " />
@@ -220,8 +221,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/assets/css/style.css" />
         <option value="$PROJECT_DIR$/app/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/app/templates/main.php" />
         <option value="$PROJECT_DIR$/app/database/model/User.php" />
+        <option value="$PROJECT_DIR$/app/templates/main.php" />
       </list>
     </option>
   </component>
@@ -434,7 +435,8 @@
       <workItem from="1583004539095" duration="563000" />
       <workItem from="1583047523900" duration="7780000" />
       <workItem from="1583078399125" duration="1119000" />
-      <workItem from="1583132917268" duration="5252000" />
+      <workItem from="1583132917268" duration="5385000" />
+      <workItem from="1583169466109" duration="654000" />
     </task>
     <task id="LOCAL-00001" summary="Simple guestbook in native PHP, JS, HTML and CSS.">
       <created>1583078667854</created>
@@ -450,16 +452,24 @@
       <option name="project" value="LOCAL" />
       <updated>1583137301629</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix bug">
+      <created>1583138181815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583138181815</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145435000" />
+    <option name="totallyTimeSpent" value="146222000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="27" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13712122" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13939394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5027668" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -532,7 +542,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Simple guestbook in native PHP, JS, HTML and CSS." />
     <MESSAGE value="Added pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added pagination" />
+    <MESSAGE value="Fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -800,7 +811,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/model/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
+        <state relative-caret-position="774">
           <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
           <folding>
             <marker date="1582995488109" expanded="true" signature="656:791" ph="INSERT INTO `${{$this-&gt;database-&gt;config['DATABASE']}}`.`comments`... " />
@@ -821,7 +832,7 @@
     <entry file="file://$PROJECT_DIR$/app/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3672">
-          <caret line="204" column="27" lean-forward="true" selection-start-line="204" selection-start-column="27" selection-end-line="204" selection-end-column="27" />
+          <caret line="204" column="27" lean-forward="false" selection-start-line="204" selection-start-column="27" selection-end-line="204" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -834,29 +845,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/main.php">
+    <entry file="file://$PROJECT_DIR$/app/database/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="527">
+          <caret line="110" column="29" lean-forward="false" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+          <folding>
+            <element signature="e#38#46#0#PHP" expanded="true" />
+            <marker date="1583169494713" expanded="true" signature="763:868" ph="INSERT INTO `${{$this-&gt;database-&gt;config['DATABASE']}}`.`users`... " />
+            <marker date="1583169494713" expanded="true" signature="1712:2226" ph="SELECT `user... users" />
+            <marker date="1583169494713" expanded="true" signature="1712:2232" ph="SELECT `user... users" />
+            <marker date="1583169494713" expanded="true" signature="1712:2247" ph="SELECT `user... users" />
+            <marker date="1583169494713" expanded="true" signature="2736:2772" ph="SELECT COUNT... $" />
+            <marker date="1583169494713" expanded="true" signature="2736:2773" ph="SELECT COUNT... " />
+            <marker date="1583169494713" expanded="true" signature="2736:2810" ph="SELECT COUNT... " />
+            <marker date="1583169494713" expanded="true" signature="2736:2819" ph="SELECT COUNT... users" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/model/User.php">
+    <entry file="file://$PROJECT_DIR$/app/templates/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding>
-            <element signature="e#38#46#0#PHP" expanded="true" />
-            <marker date="1583138068035" expanded="true" signature="763:868" ph="INSERT INTO `${{$this-&gt;database-&gt;config['DATABASE']}}`.`users`... " />
-            <marker date="1583138068035" expanded="true" signature="1712:2226" ph="SELECT `user... users" />
-            <marker date="1583138068035" expanded="true" signature="1712:2232" ph="SELECT `user... users" />
-            <marker date="1583138068035" expanded="true" signature="1712:2247" ph="SELECT `user... users" />
-            <marker date="1583138068035" expanded="true" signature="2736:2766" ph="SELECT COUNT... $" />
-            <marker date="1583138068035" expanded="true" signature="2736:2767" ph="SELECT COUNT... " />
-            <marker date="1583138068035" expanded="true" signature="2736:2804" ph="SELECT COUNT... " />
-            <marker date="1583138068035" expanded="true" signature="2736:2813" ph="SELECT COUNT... users" />
-          </folding>
+        <state relative-caret-position="447">
+          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -37,7 +37,9 @@ $user = new User();
 <?php if ($user->select()) { ?>
   <div class="skl-section__pagination">
     <ul class="pagination">
-      <li><a href="">«</a></li>
+      <?php if ($user->getCurrentPage() != 1) { ?>
+        <li><a href="?page=<?php echo $user->getCurrentPage() - 1; ?>">«</a></li>
+      <?php } ?>
       <?php for ($i = 1; $i <= $user->getPagesCount(); $i++) { ?>
         <?php if ($user->getCurrentPage() == $i) { ?>
           <li><a href="?page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
@@ -45,7 +47,9 @@ $user = new User();
           <li><a href="?page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
         <?php } ?>
       <?php } ?>
-      <li><a href="">»</a></li>
+      <?php if ($user->getCurrentPage() == 1) { ?>
+        <li><a href="?page=<?php echo $user->getCurrentPage() + 1; ?>">»</a></li>
+      <?php } ?>
     </ul>
   </div>
 <?php } ?>
