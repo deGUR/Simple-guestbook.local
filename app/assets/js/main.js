@@ -16,7 +16,7 @@ window.onload = function () {
       request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
 
-          /**@var file - full name of the uploaded file. */
+          /**@let file - full name of the uploaded file. */
           let file = document.getElementById("skl_file").files[0].name;
 
           let fileType = file.substr(-4);
@@ -66,15 +66,6 @@ window.onload = function () {
     }
   }
 
-  /**
-   * Handler pagination.
-   */
-  function ajaxPagination() {
-    let pagination = document.querySelector(".skl-section__pagination");
-
-    pagination.style.display = "none";
-  }
-
   function incrementIndex(elem) {
     let count = elem.querySelector("span");
     count.innerText = parseInt(count.innerText) + 1;
@@ -82,5 +73,4 @@ window.onload = function () {
 
   ajaxRequestHandler();
   ajaxLikeIncrement();
-  ajaxPagination();
 };

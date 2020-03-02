@@ -14,6 +14,15 @@ class User
    */
   protected $database;
 
+  /**
+   * @var int - number of records on page.
+   */
+  protected $perPage = 2;
+
+  protected $pagesCount;
+
+  protected $currentPage;
+
   public function __construct()
   {
     $this->database = DatabaseConnection::getInstance();
@@ -58,6 +67,14 @@ class User
    */
   public function select(): array
   {
+    if (isset($_GET['page'])) {
+      $this->currentPage = $_GET['page'];
+    } else {
+      $this->currentPage = 1;
+    }
+    /** @var  $start - Comment number from which we start the selection. */
+    $start = ($this->currentPage - 1) * $this->perPage;
+
     try {
       $statement = $this->database->connection->prepare(
         "SELECT `users`.`first_name`, `users`.`last_name`, 
@@ -66,8 +83,33 @@ class User
 			  FROM `{$this->database->config['DATABASE']}`.`users` 
 			  INNER JOIN `{$this->database->config['DATABASE']}`.`comments` ON `users`.`user_id` = `comments`.`user_id`
 			  INNER JOIN `{$this->database->config['DATABASE']}`.`topics` ON `comments`.`topic_id` = `topics`.`topic_id`
-			  ORDER BY `users`.`user_id` DESC LIMIT 3;
+			  ORDER BY `users`.`user_id` DESC 
+			  LIMIT $start, $this->perPage;
 			  ");
+
+      $statement->execute();
+
+      /** @var $pagesCount - The number of records from the database is divided by the number displayed on the page. */
+      $this->pagesCount = ceil($this->getCountComments()[0]['count']/$this->perPage);
+
+      return $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    } catch (PDOException $exception) {
+      throw new Exception($exception->getMessage());
+    }
+  }
+
+  /**
+   * Helper for choosing the number of posts from the database.
+   *
+   * @return array
+   * @throws Exception
+   */
+  private function getCountComments()
+  {
+    try {
+      $statement = $this->database->connection->prepare(
+        "SELECT COUNT(*) as count FROM `{$this->database->config['DATABASE']}`.`users`");
 
       $statement->execute();
 
@@ -76,5 +118,21 @@ class User
     } catch (PDOException $exception) {
       throw new Exception($exception->getMessage());
     }
+  }
+
+  /**
+   * @return mixed
+   */
+  public function getPagesCount()
+  {
+    return $this->pagesCount;
+  }
+
+  /**
+   * @return mixed
+   */
+  public function getCurrentPage()
+  {
+    return $this->currentPage;
   }
 }
