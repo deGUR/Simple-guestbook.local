@@ -89,8 +89,7 @@ class User
 
       $statement->execute();
 
-      /** @var $pagesCount - The number of records from the database is divided by the number displayed on the page. */
-      $this->pagesCount = ceil($this->getCountComments()[0]['count']/$this->perPage);
+      $this->getCountComments();
 
       return $statement->fetchAll(PDO::FETCH_ASSOC);
 
@@ -113,7 +112,12 @@ class User
 
       $statement->execute();
 
-      return $statement->fetchAll(PDO::FETCH_ASSOC);
+      $count = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+      /** @var $pagesCount - The number of records from the database is divided by the number displayed on the page. */
+      $this->pagesCount = ceil($count[0]['count']/$this->perPage);
+
+      return $count;
 
     } catch (PDOException $exception) {
       throw new Exception($exception->getMessage());
